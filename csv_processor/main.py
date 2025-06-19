@@ -4,10 +4,8 @@ from csv_processor.core.filter import apply_filter
 from csv_processor.core.loader import load_csv
 from csv_processor.utils.logger import logger
 from csv_processor.utils.printer import print_table
-from csv_processor.utils.validation import (
-    ensure_column_exists,
-    ensure_column_is_numeric,
-)
+from csv_processor.utils.validation import (ensure_column_exists,
+                                            ensure_column_is_numeric)
 
 VALID_AGG_OPS = {"min", "max", "avg"}
 
