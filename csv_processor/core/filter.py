@@ -1,5 +1,6 @@
 from typing import Callable
 
+
 def apply_filter(rows: list[dict], condition: str) -> list[dict]:
     import operator
 
@@ -16,6 +17,7 @@ def apply_filter(rows: list[dict], condition: str) -> list[dict]:
             return [row for row in rows if func(cast(row[key]), cast(val))]
 
     raise ValueError(f"Invalid filter: {condition}")
+
 
 def cast(value: str):
     try:
